@@ -1,0 +1,80 @@
+#about {
+    &__a {
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: .3rem;
+        }
+    }
+    &__b {
+        display: flex;
+        flex-direction: row;
+        margin: auto 20px auto 20px;
+    }
+    &__c {
+        background-color: $dark-color;
+        padding-bottom: 10px;
+        margin-top: .8rem;
+        .ability-sections {
+            margin: auto 0 auto 10px;
+            .total-level {
+                width: 80%;
+                height: 10px;
+                background-color: white;
+                .ability-level {
+                    &_html {
+                        width: 90%;
+                        background-color: black;
+                        height: 100%;
+                    }
+                    &_css {
+                        width: 95%;
+                        background-color: black;
+                        height: 100%;
+                    }
+                    &_javascript {
+                        width: 50%;
+                        background-color: black;
+                        height: 100%;
+                    }
+                    &_react {
+                        width: 30%;
+                        background-color: black;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &__d {
+        .container {
+            .about-logos {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 35px;
+                align-items: center;
+            }
+            .references {
+                .details {
+                    display: grid;
+                    grid-template-columns: repeat(5, 239px);
+                    overflow-x: scroll;
+                    .info {
+                        margin: .5rem;
+                        div {
+                            display: flex;
+                            align-items: center;
+                        }
+                        img {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                        }
+                        >p {
+                            border: 2px solid #c3afaf;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

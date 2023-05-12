@@ -1,0 +1,97 @@
+#home {
+    &__a {
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem .5rem 1rem .5rem;
+            i {
+                color: $primary-color;
+                margin: .5rem;
+            }
+            h3 {
+                margin: .3rem;
+            }
+        }
+    }
+    &__b {
+        .profile {
+            display: flex;
+            margin: 1.5rem 0;
+            word-spacing: 1px;
+            div {
+                flex: 1;
+                padding: 1.5rem;
+                &:nth-child(odd) {
+                    background-color: $light-color;
+                }
+                &:nth-child(even) {
+                    background-color: $dark-color;
+                }
+            }
+        }
+        h3 {
+            margin: .3rem;
+        }
+    }
+    &__c {
+        .process {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 9.5rem;
+            div {
+                margin: 0 2rem;
+                div {
+                    border-radius: 50%;
+                    padding: 2rem;
+                    background-color: rgb(60, 59, 59);
+                    color: white;
+                    transition: all .5s;
+                    position: relative;
+                    &:hover {
+                        background-color: $primary-color;
+                        color: black;
+                        p {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                    i {
+                        p {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            font-size: 1rem;
+                            background-color: pink;
+                            border-radius: 50%;
+                            padding: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__d {
+        display: flex;
+        justify-content: space-between;
+        background-color: $dark-color;
+        align-items: center;
+        p {
+            margin-left: 3rem;
+        }
+        ul {
+            margin-right: 2rem;
+            li {
+                display: inline-block;
+                margin: .5rem;
+                border: 2px solid white;
+                border-radius: 50%;
+                padding: 0 .3rem;
+                font-size: 1rem;
+                color: white;
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+}

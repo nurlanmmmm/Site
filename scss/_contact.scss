@@ -1,0 +1,47 @@
+.contact-details {
+    .form {
+        display: grid;
+        grid-template-areas: "name surname" "subject phone" "textarea textarea" "button button";
+        gap: 11px;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 10px;
+        .name {
+            grid-area: name;
+        }
+        .surname {
+            grid-area: surname;
+        }
+        .subject {
+            grid-area: subject;
+        }
+        .phone {
+            grid-area: phone;
+        }
+        .textarea {
+            grid-area: textarea;
+        }
+        .submit {
+            grid-area: button;
+            a {
+                color: white;
+            }
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    }
+    &_section__b {
+        .container {
+            display: flex;
+            justify-content: space-around;
+            background-color: $primary-color;
+            .contact-me {
+                i {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
